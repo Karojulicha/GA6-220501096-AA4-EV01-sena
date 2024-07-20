@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial: Introducción a HTML y CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tutorial: Introducción a HTML y CSS</h1>
+    </header>
+    <main>
+      <img
+        src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/HTML-and-CSS-768x453.png"
+      />
+      <ol>
+        <div class="HTML">
+          <h2>Estructura HTML</h2>
+          <p>
+            HTML, siglas en inglés de HyperText Markup Language (Lenguaje de
+            Marcado de Hipertexto), es el lenguaje estándar utilizado para crear
+            y diseñar páginas web. Consiste en una serie de etiquetas que
+            definen la estructura y el contenido de una página web, permitiendo
+            incorporar texto, imágenes, enlaces, formularios y otros elementos
+            multimedia. HTML proporciona el esqueleto básico sobre el cual se
+            construye una página web, facilitando la comunicación entre el
+            navegador y el servidor para mostrar información de manera
+            organizada y accesible para los usuarios.
+          </p>
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401160946/HTML-Basic-Format-768x534.png"
+            alt="Estructura de HTML"
+          />
+          <ul>
+            <h4> Etiquetas de HTML</h4>
+            <li>
+              !DOCTYPE html: Define la versión de HTML utilizada en el
+              documento.
+            </li>
+            <li>
+              html: Contenedor principal que engloba todo el contenido HTML.
+            </li>
+            <li>
+              head: Contiene metadatos y enlaces a recursos externos como CSS.
+            </li>
+            <li>
+              title: Define el título de la página que se muestra en la pestaña
+              del navegador.
+            </li>
+            <li>body: Contiene todo el contenido visible de la página.</li>
+            <li>
+              header: Sección que usualmente contiene el encabezado principal de
+              la página.
+            </li>
+            <li>
+              h1, h2: Encabezados que definen los títulos principales y
+              secundarios dentro de la página.
+            </li>
+            <li>main: Define el contenido principal de la página.</li>
+            <li>
+              section: Agrupa contenido relacionado dentro de la página, en este
+              caso, temas del tutorial.
+            </li>
+            <li>
+              img: Inserta una imagen en la página, con atributos src para la
+              URL de la imagen y alt para texto alternativo.
+            </li>
+            <li>p: Define un párrafo de texto.</li>
+            <li>
+              footer: Sección que contiene información de pie de página, como
+              derechos de autor o información de contacto.
+            </li>
+          </ul>
+        </div>
+
+        <h2>Estilización con CSS</h2>
+        <div class="css">
+          <p>
+            CSS, que significa Cascading Style Sheets (Hojas de Estilo en
+            Cascada), es un lenguaje utilizado junto con HTML y otros lenguajes
+            de marcado para controlar la presentación visual de páginas web. CSS
+            describe cómo debe mostrarse el contenido HTML en términos de
+            diseño, colores, fuentes y otros aspectos visuales. Permite separar
+            el contenido estructural de una página web de su diseño y formato,
+            lo cual facilita la creación de sitios web estéticamente atractivos
+            y con un diseño coherente. Al aplicar reglas CSS a elementos
+            específicos de una página web, los desarrolladores pueden modificar
+            su apariencia y disposición sin necesidad de alterar el código HTML
+            subyacente, lo que promueve la mantenibilidad y la flexibilidad del
+            sitio.
+          </p>
+          <img
+            src="https://www.dongee.com/tutoriales/content/images/2023/01/image-6.png"
+            alt="Estilos con CSS"
+          />
+          <ul>
+            <li>
+              <h4>
+                body { ... }: Este bloque de reglas CSS aplica estilos al
+                elemento &lt;body&gt; de tu página web. Aquí están las
+                propiedades y sus funciones:
+              </h4>
+              <ul>
+                <li>
+                  font-family: Arial, sans-serif;: Define la fuente principal
+                  que se utilizará para el texto en el cuerpo del documento. En
+                  este caso, si Arial no está disponible, se utilizará cualquier
+                  fuente sans-serif genérica.
+                </li>
+                <li>
+                  background-color: #f0f0f0;: Establece el color de fondo del
+                  cuerpo de la página en un tono gris claro (#f0f0f0).
+                </li>
+                <li>
+                  margin: 0;: Elimina los márgenes predeterminados alrededor del
+                  cuerpo de la página, asegurando que no haya espacios en blanco
+                  innecesarios.
+                </li>
+                <li>
+                  padding: 0;: Elimina el relleno predeterminado dentro del
+                  cuerpo de la página, asegurando que el contenido comience
+                  desde el borde del cuerpo sin espacio adicional.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                ol { ... }: Este bloque de reglas CSS aplica estilos a una lista
+                ordenada (&lt;ol&gt;). Aquí están las propiedades y sus
+                funciones:
+              </h4>
+              <ul>
+                <li>
+                  list-style-type: none;: Elimina los marcadores predeterminados
+                  de la lista, haciendo que no haya viñetas o números antes de
+                  cada elemento de lista.
+                </li>
+                <li>
+                  counter-reset: section;: Reinicia el contador llamado
+                  "section" para que comience desde cero. Este contador se usa
+                  luego para numerar automáticamente los elementos de la lista.
+                </li>
+                <li>
+                  margin: 20px;: Establece un margen de 20 píxeles alrededor de
+                  la lista ordenada, creando espacio entre la lista y otros
+                  elementos cercanos.
+                </li>
+                <li>
+                  padding: 0;: Elimina el relleno interno de la lista ordenada,
+                  asegurando que no haya espacio adicional dentro de la lista
+                  misma.
+                </li>
+                <li>
+                  background-color: #fff;: Define un color de fondo blanco
+                  (#ffffff) para la lista ordenada.
+                </li>
+                <li>
+                  border: 1px solid #ccc;: Crea un borde alrededor de la lista
+                  ordenada con un grosor de 1 píxel, sólido (#ccc es un tono de
+                  gris claro).
+                </li>
+                <li>
+                  border-radius: 5px;: Aplica esquinas redondeadas al borde de
+                  la lista ordenada, creando un efecto más suave en los bordes.
+                </li>
+                <li>
+                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);: Agrega una sombra
+                  suave alrededor de la lista ordenada. La sombra tiene un
+                  desplazamiento horizontal de 0 píxeles, un desplazamiento
+                  vertical de 2 píxeles, un desenfoque de 5 píxeles y es de
+                  color negro con una transparencia del 10%.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                li { ... }: Este bloque de reglas CSS aplica estilos a los
+                elementos de lista (&lt;li&gt;) dentro de la lista ordenada.
+                Aquí están las propiedades y sus funciones:
+              </h4>
+              <ul>
+                <li>
+                  padding: 20px;: Agrega un relleno de 20 píxeles alrededor de
+                  cada elemento de lista, creando espacio dentro de cada
+                  elemento de lista.
+                </li>
+                <li>
+                  border-bottom: 1px solid #ccc;: Agrega un borde sólido de 1
+                  píxel en la parte inferior de cada elemento de lista,
+                  separando visualmente los elementos de lista entre sí.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                before { ... }: Este bloque de reglas CSS utiliza un
+                pseudoelemento (::before) para agregar contenido antes de cada
+                elemento de lista (&lt;li&gt;). Aquí están las propiedades y sus
+                funciones:<
+              </h4>
+              <ul>
+                <li>
+                  content: counter(section) ". ";: Define el contenido que se
+                  insertará antes de cada elemento de lista. En este caso,
+                  utiliza el valor del contador "section" seguido de un punto y
+                  un espacio.
+                </li>
+                <li>
+                  counter-increment: section;: Incrementa el valor del contador
+                  "section" en 1 después de cada elemento de lista, asegurando
+                  que cada elemento de lista tenga un número secuencial.
+                </li>
+                <li>
+                  font-weight: bold;: Establece el peso de la fuente en negrita
+                  para el número de lista y el punto que lo sigue, haciéndolo
+                  destacar visualmente del texto del elemento de lista.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                hover { ... }: Este bloque de reglas CSS aplica estilos cuando
+                el usuario pasa el cursor sobre un elemento de lista
+                (&lt;li&gt;). Aquí está la propiedad y su función:
+              </h4>
+              <ul>
+                <li>
+                  background-color: #f9f9f9;: Cambia el color de fondo del
+                  elemento de lista a un tono gris claro (#f9f9f9) cuando el
+                  cursor del mouse se desplaza sobre él, proporcionando
+                  retroalimentación visual al usuario.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                p { ... }: Este bloque de reglas CSS aplica estilos a los
+                elementos &lt;p&gt; (párrafos) dentro de la lista ordenada. Aquí
+                está la propiedad y su función:
+              </h4>
+              <ul>
+                <li>
+                  margin: 0;: Elimina el margen predeterminado alrededor de los
+                  párrafos dentro de la lista ordenada, asegurando que no haya
+                  espacio en blanco adicional alrededor del texto del párrafo.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </ol>
+    </main>
+    <footer>
+      <p>2024 Tutorial HTML y CSS</p>
+    </footer>
+  </body>
+</html>
