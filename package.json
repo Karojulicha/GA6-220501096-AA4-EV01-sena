@@ -2,7 +2,6 @@
   "name": "evi-ga6-220501096-aa4-ev01",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
